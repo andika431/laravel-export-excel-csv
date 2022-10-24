@@ -19,3 +19,5 @@ Route::get('/', function () {
 Route::get('/add-employee',[EmployeeController::class,'addEmployee']);
 Route::get('/export-excel',[EmployeeController::class,'ExportIntoExcel']);
 Route::get('/export-csv',[EmployeeController::class,'ExportIntoCSV']);
+Route::get('/import-form',[EmployeeController::class,'importForm']);
+Route::post('/import',[EmployeeController::class,'import'])->name('employee.import');
